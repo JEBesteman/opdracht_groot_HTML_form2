@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Contact</title>
+  </head>
+
+  <body>
+    <header>
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home pagina</a></li>
+                <li><a href="about.html">Pagina over mezelf</a></li>
+                <li><a href="trainingen.html">Trainingen</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="centreer">Vragenlijst:</h1>
+    </header>
+    <main>
+        <section class="contact-form">
+            <form name="contact" method="POST" data-netlify="true">
+                <!-- naam -->
+                <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="naam" required>
+                </div>
+
+                    <!--email-adres-->
+                <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                </div>
+                    <!--telefoonnummer (tel)-->
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <!--leeftijd-->
+                    <div>
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" min="1" max="200" steps="5">
+                    </div>
+                    <!--geboortedatum-->
+                    <div>
+                        <label for="date">Birthday</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <hr>
+
+                    <div>
+                        Gender
+                    
+                    <!--gender met radiobuttons-->
+                        <div>
+                            <label for female>Female</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                        </div>
+                        <div>
+                            <label for="male">Male</label>
+                            <input type="radio" id="male" name="gender" value="male">
+                        </div>
+                        <div>
+                            <label for="other">Other</label>
+                            <input type="radio" id="other" name="gender" value="other">
+                        </div>
+                    </div>
+                        <hr>
+                    <div>
+                        Favorite Cuisine
+                    
+                        <!--favoriete cuisine met checkbox: Frans, It, Spaans, Arab-->
+                        <div>
+                            <label for="french">French</label>
+                            <input type="checkbox" id="french" name="French">
+                        </div>
+                        <div>
+                            <label for="italian">Italian</label>
+                            <input type="checkbox" id="italian" name="italian">
+                        </div>
+                        <div>
+                            <label for="spanish">Spanish</label>
+                            <input type="checkbox" id="spanish" name="spanish">
+                        </div>
+                        <div>
+                            <label for="arabic">Arabic</label>
+                            <input type="checkbox" id="arabic" name="arabic">
+                        </div>
+                    </div>
+                    <hr>
+                    <!--favoriete kleur van short met colorpicker-->
+                    <div>
+                        <label for="color">Favoriete kleur van je schort:</label>
+                        <input type="color" id="color" name="color">
+                    </div>
+                    <hr>
+                    <!--tekstinvoer voor biografie-->
+                    <div>
+                        <label for="bio">Bio</label>
+                        <textarea id="bio" name="bio"></textarea>
+                    </div>
+                    <input type="hidden" name="hidden" value= "hi">
+                    <!--upload laatste recept, upload file-->
+                    <div>
+                        <label for="file">File</label>
+                        <input type="file" id="file" name="file">
+                    </div>
+                    <!--url naar je website, url-->
+                    <div>
+                        <label for="url">URL</label>
+                        <input type="url" name="url" id="url">
+                    </div>
+                    <!-- reset button om formulier leeg te kunnen maken. NOG VERANDEREN!!-->
+                    
+                    <button type="reset">Reset</button>
+                    
+                    <!-- submit button om formulier te kunnen verzenden-->
+                    <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3 class="border"><em>Copyright &copy; 2021 Jolanda Besteman</em></h3>
+    </footer>
+  </body>
+</html>
